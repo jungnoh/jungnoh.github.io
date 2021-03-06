@@ -57,7 +57,7 @@ i.subtitle {
 }
 .cv-list > li {
   margin-bottom: 1.5em;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 /* Layout */
@@ -66,18 +66,21 @@ body {
 }
 
 @media screen and (min-width: 720px) {
-  body {
+  /* body {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 10vh;
-  }
+  } */
   .profile {
     width: 300px;
+    position: fixed;
+    top: 10vh;
+    left: calc(25vw - 150px);
   }
   .cv {
+    margin-left: calc(25vw + 150px);
+    padding-top: 16px;
     width: 50vw;
-    height: 80vh;
-    overflow: scroll;
   }
 }
