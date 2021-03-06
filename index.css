@@ -1,0 +1,83 @@
+/* Typography */
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-weight: 400;
+  font-size: 1.35rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(3, 102, 214);
+  cursor: pointer;
+}
+.bold-header {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 0.4em;
+}
+.light-header {
+  display: inline-block;
+  color: #888;
+  font-weight: 100;
+  margin-bottom: 0.4em;
+}
+ul {
+  list-style-type: none;
+  padding-inline: 0;
+}
+
+/* Profile */
+li {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+ul.links {
+  margin-top: 3.5rem;
+}
+ul.links > li {
+  margin-bottom: 2em;
+}
+i.subtitle {
+  color: #AAA;
+}
+
+/* CV */
+.cv-list {
+  padding-top: 1em;
+}
+.cv-list > li {
+  margin-bottom: 1.5em;
+  line-height: 1.2;
+}
+
+/* Layout */
+body {
+  padding: 16px;
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10vh;
+  }
+  .profile {
+    width: 300px;
+  }
+  .cv {
+    width: 50vw;
+    height: 80vh;
+    overflow: scroll;
+  }
+}
